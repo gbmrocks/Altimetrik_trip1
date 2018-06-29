@@ -133,7 +133,12 @@ public class Hotel {
 	}
 
 	class _links {
-	 More_rooms_at_this_hotel More_rooms_at_this_hotelObject;
+	 @Override
+		public String toString() {
+			return "_links [More_rooms_at_this_hotelObject=" + More_rooms_at_this_hotelObject + "]";
+		}
+
+	More_rooms_at_this_hotel More_rooms_at_this_hotelObject;
 
 
 	 // Getter Methods 
@@ -177,7 +182,12 @@ public class Hotel {
 	  return amount;
 	 }
 
-	 public String getCurrency() {
+	 @Override
+	public String toString() {
+		return "Min_daily_rate [amount=" + amount + ", currency=" + currency + "]";
+	}
+
+	public String getCurrency() {
 	  return currency;
 	 }
 
@@ -216,4 +226,9 @@ public class Hotel {
 	 public void setCurrency(String currency) {
 	  this.currency = currency;
 	 }
+
+	@Override
+	public String toString() {
+		return "Total_price [amount=" + amount + ", currency=" + currency + "]";
+	}
 	}

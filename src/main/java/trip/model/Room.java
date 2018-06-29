@@ -3,7 +3,15 @@ package trip.model;
 import java.util.ArrayList;
 
 public class Room {
-	 private String booking_code;
+	 @Override
+	public String toString() {
+		return "Room [booking_code=" + booking_code + ", room_type_code=" + room_type_code + ", rate_plan_code="
+				+ rate_plan_code + ", Total_amountObject=" + Total_amountObject + ", rates=" + rates + ", descriptions="
+				+ descriptions + ", Room_type_infoObject=" + Room_type_infoObject + ", rate_type_code=" + rate_type_code
+				+ "]";
+	}
+
+	private String booking_code;
 	 private String room_type_code;
 	 private String rate_plan_code;
 	 Total_amount Total_amountObject;

@@ -1,7 +1,12 @@
 package trip.model;
 
 public class Address {
-	 private String line1;
+	 @Override
+	public String toString() {
+		return "Address [line1=" + line1 + ", city=" + city + ", region=" + region + ", postal_code=" + postal_code
+				+ ", country=" + country + "]";
+	}
+	private String line1;
 	 private String city;
 	 private String region;
 	 private String postal_code;

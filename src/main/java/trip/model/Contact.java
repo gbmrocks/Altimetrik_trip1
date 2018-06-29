@@ -21,7 +21,12 @@ public class Contact {
 	  this.type = type;
 	 }
 
-	 public void setDetail(String detail) {
+	 @Override
+	public String toString() {
+		return "Contact [type=" + type + ", detail=" + detail + "]";
+	}
+
+	public void setDetail(String detail) {
 	  this.detail = detail;
 	 }
 }
